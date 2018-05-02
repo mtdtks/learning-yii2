@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\app\models\Country</OriginalElement>
+  <nodes>
+    <node x="519.25" y="237.0">\yii\db\ActiveRecordInterface</node>
+    <node x="3.0" y="158.0">\yii\base\Component</node>
+    <node x="381.1333333333334" y="316.0">\yii\db\BaseActiveRecord</node>
+    <node x="4.5" y="79.0">\yii\base\BaseObject</node>
+    <node x="0.0" y="0.0">\yii\base\Configurable</node>
+    <node x="393.1333333333333" y="395.0">\yii\db\ActiveRecord</node>
+    <node x="117.00000000000003" y="158.0">\IteratorAggregate</node>
+    <node x="364.0" y="158.0">\ArrayAccess</node>
+    <node x="407.13333333333327" y="474.0">\app\models\Country</node>
+    <node x="480.0" y="158.0">\yii\base\StaticInstanceInterface</node>
+    <node x="262.0" y="158.0">\yii\base\Arrayable</node>
+    <node x="270.0" y="237.0">\yii\base\Model</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\yii\db\BaseActiveRecord" target="\yii\db\ActiveRecordInterface">
+      <point x="31.50000000000003" y="-14.5" />
+      <point x="475.6333333333334" y="291.0" />
+      <point x="593.25" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Model" target="\yii\base\Arrayable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\BaseObject" target="\yii\base\Configurable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Component" target="\yii\base\BaseObject">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Model" target="\ArrayAccess">
+      <point x="13.199999999999989" y="-14.5" />
+      <point x="316.20000000000005" y="207.0" />
+      <point x="412.0" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\db\ActiveRecordInterface" target="\yii\base\StaticInstanceInterface">
+      <point x="0.0" y="-14.5" />
+      <point x="37.75" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Model" target="\yii\base\Component">
+      <point x="-26.399999999999977" y="-14.5" />
+      <point x="276.6" y="217.0" />
+      <point x="50.0" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\db\ActiveRecord" target="\yii\db\BaseActiveRecord">
+      <point x="2.8421709430404007E-14" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Model" target="\IteratorAggregate">
+      <point x="-13.199999999999989" y="-14.5" />
+      <point x="289.80000000000007" y="207.0" />
+      <point x="179.50000000000003" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Model" target="\yii\base\StaticInstanceInterface">
+      <point x="26.399999999999977" y="-14.5" />
+      <point x="329.4" y="217.0" />
+      <point x="517.75" y="217.0" />
+      <point x="-37.75" y="14.5" />
+    </edge>
+    <edge source="\yii\db\BaseActiveRecord" target="\yii\base\Model">
+      <point x="-31.49999999999997" y="-14.5" />
+      <point x="412.6333333333334" y="291.0" />
+      <point x="303.0" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\app\models\Country" target="\yii\db\ActiveRecord">
+      <point x="2.8421709430404007E-14" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="334.0" y="251.5" />
+  <SelectedNodes>
+    <node>\app\models\Country</node>
+  </SelectedNodes>
+  <Categories />
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

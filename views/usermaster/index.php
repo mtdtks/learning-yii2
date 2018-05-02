@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Usermaster', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <p><?php //var_dump($this); ?></p>
     <p>
     <!-- ここにボタン作る -->
     <!-- Ajaxで切り替えでは… -->

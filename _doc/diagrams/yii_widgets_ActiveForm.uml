@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\yii\widgets\ActiveForm</OriginalElement>
+  <nodes>
+    <node x="164.0" y="158.0">\yii\base\Component</node>
+    <node x="165.5" y="79.0">\yii\base\BaseObject</node>
+    <node x="161.0" y="0.0">\yii\base\Configurable</node>
+    <node x="95.50000000000003" y="316.0">\yii\widgets\ActiveForm</node>
+    <node x="106.50000000000003" y="237.0">\yii\base\Widget</node>
+    <node x="0.0" y="158.0">\yii\base\ViewContextInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\yii\base\BaseObject" target="\yii\base\Configurable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Component" target="\yii\base\BaseObject">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Widget" target="\yii\base\ViewContextInterface">
+      <point x="-17.5" y="-14.5" />
+      <point x="124.00000000000003" y="212.0" />
+      <point x="72.0" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\widgets\ActiveForm" target="\yii\base\Widget">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\yii\base\Widget" target="\yii\base\Component">
+      <point x="17.5" y="-14.5" />
+      <point x="159.00000000000003" y="212.0" />
+      <point x="211.0" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="130.5" y="172.5" />
+  <SelectedNodes>
+    <node>\yii\widgets\ActiveForm</node>
+  </SelectedNodes>
+  <Categories />
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
