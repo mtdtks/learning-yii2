@@ -7,6 +7,10 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Usermaster */
 /* @var $form yii\widgets\ActiveForm */
 ?>
+<script>
+    //$('')
+
+</script>
 
 <div class="usermaster-form">
 

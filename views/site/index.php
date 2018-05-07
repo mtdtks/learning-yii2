@@ -20,6 +20,10 @@ $this->title = 'My Yii Application';
             <div class="col-lg-4">
                 <h2>TestSpace...</h2>
                 <?php
+                use app\components\validators\TelValidator;
+
+
+
 
 
 

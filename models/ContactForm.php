@@ -4,7 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
-use app\components\validators\CountryValidator;
+use app\components\validators\TelValidator;
 
 /**
  * ContactForm is the model behind the contact form.
@@ -16,6 +16,7 @@ class ContactForm extends Model
     public $subject;
     public $body;
     public $verifyCode;
+    public $tel_number;
 
 
     /**
@@ -30,8 +31,8 @@ class ContactForm extends Model
             // email has to be a valid email address
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
+            ['tel_number', TelValidator::className()],
 
-            ['name', CountryValidator::className()],
         ];
     }
 

@@ -8,10 +8,11 @@
 
 namespace app\components\validators;
 use yii\validators\Validator;
+use app\models\ContactForm;
 
 class TelValidator extends Validator
 {
-/*
+
     public function validateAttribute($model, $attribute)
     {
         // 電話番号正規表現
@@ -25,21 +26,21 @@ class TelValidator extends Validator
         }
 
     }
-*/
 
 
+/*
     public function validateAttribute($model, $attribute)
     {
-        // 電話番号正規表現
-        // /^[0-9]{2,4}-?[0-9]{2,4}-?[0-9]{3,4}$/
+        if (!$model->$attribute){
+            $this->message = '空';
 
-        ////var_dump($model);
-        var_dump($attribute);
-        //var_dump();
-        if(!preg_match("/^[0-9]{2,4}-?[0-9]{2,4}-?[0-9]{3,4}$/", $model->$attribute)){
-            $this->addError($model, $attribute, '電話番号では多分ありませんかもしれません');
         }
 
 
+
+
     }
+
+*/
+
 }

@@ -2,10 +2,10 @@
 
 namespace app\models;
 
-use app\components\validators\TelValidator;
 use Yii;
 use yii\base\Model;
 use app\components\validators\UsermasterValidator;
+use app\components\validators\TelValidator;
 
 /**
  * This is the model class for table "usermaster".

@@ -14,7 +14,6 @@ use app\components\validators\CountryValidator;
  * @property int $population
  */
 
-//DBにコメントのやり方がわからない
 class Country extends \yii\db\ActiveRecord
 {
     /**
@@ -32,14 +31,14 @@ class Country extends \yii\db\ActiveRecord
     public function rules()
     {
         //validation
-        var_dump(CountryValidator::className());
         return [
             [['code', 'name'], 'required'],
             [['population'], 'integer'],
+            [['population'], CountryValidator::className()],
             [['code'], 'string', 'max' => 2],
             [['name'], 'string', 'max' => 52],
             [['code'], 'unique'],
-            ['name', CountryValidator::className()]
+            //['name', CountryValidator::className() ]
         ];
     }
 
