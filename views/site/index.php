@@ -20,19 +20,6 @@ $this->title = 'My Yii Application';
             <div class="col-lg-4">
                 <h2>TestSpace...</h2>
                 <?php
-                var_dump(__DIR__ . '/../vendor/autoload.php');
-
-                var_dump(__DIR__ );
-
-
-
-
-
-
-
-
-
-
 
 
 
