@@ -49,11 +49,11 @@ class UsermasterSearch extends Usermaster
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
-        $dataProvider->on(static::EVENT_AFTER_FIND, function (){
+        $dataProvider->on(static::EVENT_AFTER_FIND, function () {
             var_export('aaaa');
         });
         $this->load($params);
-        $this->on(static::EVENT_BEFORE_VALIDATE, function(){
+        $this->on(static::EVENT_BEFORE_VALIDATE, function () {
             var_export('test');
         });
         if (!$this->validate()) {

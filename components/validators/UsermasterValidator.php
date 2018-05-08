@@ -13,11 +13,9 @@ class UsermasterValidator extends Validator
 {
     public function validateAttribute($model, $attribute)
     {
-        var_dump($model->attributes);
         if (!in_array($model->$attribute, ['USA', 'Indonesia'])) {
             $this->addError($model, $attribute, '国は "{country1}" または "{country2}" でなければなりません。', ['country1' => 'USA', 'country2' => 'Indonesia']);
         }
-
     }
 
 }

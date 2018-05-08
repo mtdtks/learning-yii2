@@ -15,6 +15,7 @@ use yii\widgets\ActiveForm;
 <div class="usermaster-form">
 
     <?php $form = ActiveForm::begin(); ?>
+    <?php $form->enableClientValidation = true; ?>
 
     <?= $form->field($model, 'id')->textInput() ?>
 

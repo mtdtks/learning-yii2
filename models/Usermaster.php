@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use app\components\validators\UsermasterValidator;
 use app\components\validators\TelValidator;
+use app\components\validators\ImgChkValidator;
 
 /**
  * This is the model class for table "usermaster".
@@ -40,6 +41,8 @@ class Usermaster extends \yii\db\ActiveRecord
             [['id'], 'unique'],
             ['mail_address', 'email', 'message' => 'メルアドではない'],
             ['tel_number', TelValidator::className()],
+            ['mail_address', ImgChkValidator::className()],
+
         ];
     }
 
@@ -53,6 +56,7 @@ class Usermaster extends \yii\db\ActiveRecord
             'user_name' => 'ユーザー名',
             'mail_address' => 'メアド',
             'tel_number' => '電話番号',
+            'imageFile' => 'いめーじ',
         ];
     }
 
@@ -63,5 +67,15 @@ class Usermaster extends \yii\db\ActiveRecord
     public static function find()
     {
         return new UsermasterQuery(get_called_class());
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extentions);
+            return true;
+        } else {
+            return false;
+        }
     }
 }
