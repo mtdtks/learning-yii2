@@ -12,7 +12,6 @@ use app\models\ValidatorModel;
 use Yii;
 use yii\web\Controller;
 
-
 class CheckController extends Controller
 {
     public function actionIndex()
@@ -21,7 +20,7 @@ class CheckController extends Controller
         $model->setRules(Yii::$app->request->get('rules', []));
         $model->load(Yii::$app->request->get(), '');
         if ($model->validate()) {
-            return '';
+            return ''; // 成功したら空文字を返す必要
         } else {
             return $model->errors['value'][0]; //またはJSONに展開する
         }

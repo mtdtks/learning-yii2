@@ -41,7 +41,7 @@ class Usermaster extends \yii\db\ActiveRecord
             [['id'], 'unique'],
             ['mail_address', 'email', 'message' => 'メルアドではない'],
             ['tel_number', TelValidator::className()],
-            ['mail_address', ImgChkValidator::className()],
+            //['mail_address', ImgChkValidator::className()],
 
         ];
     }

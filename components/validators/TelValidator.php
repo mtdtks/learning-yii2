@@ -8,31 +8,24 @@
 
 namespace app\components\validators;
 
-use yii\validators\Validator;
-
-//use app\models\ContactForm;
-//use app\models\Usermaster;
-
-class TelValidator extends Validator
+class TelValidator extends AjaxValidator
 {
 
-    public function validateAttribute($model, $attribute)
+    public function validateAttribute($model, $attribute) //必須っぽい
     {
         // 電話番号正規表現
         // /^[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}$/
 
-        //var_dump($model);
-//        var_dump($attribute);
-        //var_dump();
         if (!preg_match('/^[0-9]{2,4}-?[0-9]{2,4}-?[0-9]{3,4}$/', $model->$attribute)) {
-            $this->addError($model, $attribute, '電話番号では多分ありませんかもしれません');
+            //$this->addError($model, $attribute, '電話番号では多分ありませんかもしれません');
+            $this->addError($model, $attribute, 'テストメッセージ');
         }
     }
 
-    public function clientValidateAttribute($model, $attribute, $view)
-    {
-
-        $test = 'test';
+//    public function clientValidateAttribute($model, $attribute, $view)
+//    {
+//
+//        $test = 'test';
         //$usermaster = json_encode(Usermaster::find()->select('id')->asArray()->column());
         //$message = json_encode($this->message, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
@@ -57,13 +50,13 @@ class TelValidator extends Validator
 //
 //JS;
 //    }
-        $className = str_replace('\\','\\\\', $this->className());
-        return <<<JS
-        deferred.push($.get("/check/index", {value: value, rules: ['$className']}).done(function(data) {
-            if ('' !== data) {
-                messages.push(data);
-            }
-        }));
-JS;
-    }
+//        $className = str_replace('\\', '\\\\', $this->class());
+//        return <<<JS
+//        deferred.push($.get("/check/index", {value: value, rules: ['$className']}).done(function(data) {
+//            if ('' !== data) {
+//                messages.push(data);
+//            }
+//        }));
+//JS;
+//    }
 }

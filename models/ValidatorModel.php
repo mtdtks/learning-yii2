@@ -9,11 +9,14 @@
 namespace app\models;
 
 use phpDocumentor\Reflection\Types\Array_;
+
 use app\components\validators\CountryValidator;
 use app\components\validators\ImgChkValidator;
 use app\components\validators\TelValidator;
 use app\components\validators\UsermasterValidator;
+
 use yii\base\Model;
+//use app\components\validators\AjaxValidator;
 
 class ValidatorModel extends Model
 {
@@ -38,6 +41,5 @@ class ValidatorModel extends Model
             'value' => 'value',
         ];
     }
-
 
 }
